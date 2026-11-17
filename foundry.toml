@@ -1,0 +1,19 @@
+[profile.default]
+src = "src"
+test = "test"
+out = "out"
+libs = ["lib"]
+solc = "0.8.20"
+# Aave V3 Pool impl uses Cancun opcodes (MCOPY/transient storage):
+# the Foundry default spec breaks Pool.supply with `NotActivated`
+# (59M gas revert). Cancun/Prague verified working 17 Nov 2026.
+evm_version = "prague"
+ffi = false
+# Public RPCs verified working 17 Nov 2026 (read-only fork use).
+# No API keys. Rate limits on heavy fork tests untested — budget retries.
+[rpc_endpoints]
+eth = "https://eth.drpc.org"
+eth2 = "https://eth.drpc.org"
+eth3 = "https://1rpc.io/eth"
+base = "https://mainnet.base.org"
+arb = "https://arb1.arbitrum.io/rpc"
