@@ -60,7 +60,7 @@ contract D1DonatedYieldTest is Test {
     address constant AWBTC = 0x5Ee5bf7ae06D1Be5997A1A72006FE6C607eC6DE8;
     address constant AUSDC = 0x98C23E9d8f34FEFb1B7BD6a91B7FF122F4e16F5c;
     address constant AUSDT = 0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a;
-    uint256 constant FORK_BLOCK = 26432489;
+    uint256 constant FORK_BLOCK = 26450000;
 
     // --- attack parameters ---
     uint256 constant STAKE_SAT = 7.4e8; // 7.4 wBTC
